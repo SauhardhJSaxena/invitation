@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbedda">
+  <title>Engagement Invitation</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fbedda; color: #683b25; font-family: Georgia, serif; }
+    main { min-height: 100svh; display: grid; place-items: center; padding: 10px 0; }
+    section { text-align: center; width: min(100%, 720px, max(355px, calc((100svh - 78px) * .7094))); }
+    img { display: block; width: 100%; height: auto; border-radius: 2px; box-shadow: 0 5px 24px #77432124; }
+    a { color: inherit; }
+    .action { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin: 10px auto 0; padding: 8px 24px; border: 1px solid #ac7d50; border-radius: 30px; text-decoration: none; background: #fff5e5; }
+    a:focus-visible { outline: 3px solid #663b12; outline-offset: 2px; }
+    #ceremonies { display: none; }
+    #ceremonies:target { display: block; }
+    #ceremonies:target ~ #welcome { display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="ceremonies" aria-label="Functions and ceremonies" tabindex="-1">
+      <img src="assets/ceremonies.webp" alt="Functions and ceremonies, July 2025. Sangeet on July 23, Haldi on July 25, engagement on July 27 and wedding on July 28. All at 123 Anywhere St, Any City.">
+      <a class="action" href="#welcome">← Back to invitation</a>
+    </section>
+    <section id="welcome" aria-label="Engagement invitation" tabindex="-1">
+      <a href="#ceremonies" aria-label="Open invitation to see functions and ceremonies">
+        <img src="assets/blessing.webp" alt="Lord Ganesha seated beneath a floral arch. Om Shree Ganeshaya Namaha.">
+      </a>
+      <a class="action" href="#ceremonies">Open invitation &nbsp; →</a>
+    </section>
+  </main>
+</body>
+</html>
